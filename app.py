@@ -21,9 +21,12 @@ def input_pdf_text(upload_files):
         page=reader.pages[page]
         text+=str(page.extract_text())
     return text
-input_prompt="""
-
-As an experienced ATS (Applicant Tracking System), proficient in the technical domain encompassing Software Engineering, Data Science, Data Analysis, Big Data Engineering, Web Developer, Mobile App Developer, DevOps Engineer, Machine Learning Engineer, Cybersecurity Analyst, Cloud Solutions Architect, Database Administrator, Network Engineer, AI Engineer, Systems Analyst, Full Stack Developer, UI/UX Designer, IT Project Manager, and additional specialized areas, your objective is to meticulously assess resumes against provided job descriptions. In a fiercely competitive job market, your expertise is crucial in offering top-notch guidance for resume enhancement. Assign precise matching percentages based on the JD (Job Description) and meticulously identify any missing keywords with utmost accuracy.
+input_prompt=""" As an experienced ATS (Applicant Tracking System), proficient in the technical domain encompassing Software Engineering, 
+Data Science, Data Analysis, Big Data Engineering, Web Developer, Mobile App Developer, DevOps Engineer, Machine Learning Engineer, Cybersecurity Analyst, 
+Cloud Solutions Architect, Database Administrator, Network Engineer, AI Engineer, Systems Analyst, Full Stack Developer, UI/UX Designer, IT Project Manager,
+and additional specialized areas, your objective is to meticulously assess resumes against provided job descriptions. In a fiercely competitive job market,
+your expertise is crucial in offering top-notch guidance for resume enhancement. Assign precise matching percentages based on the JD (Job Description) and
+meticulously identify any missing keywords with utmost accuracy.
 
 resume: {text}
 
