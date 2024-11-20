@@ -35,7 +35,7 @@ Paste the job description into the text area provided in the UI.
 Upload your resume (PDF format only).
 Click the "Submit" button to receive the analysis.
 
-##Code Structure
+###Code Structure
 
 The application performs the following steps:
 
